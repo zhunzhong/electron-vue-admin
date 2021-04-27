@@ -21,6 +21,17 @@ npm run lint
 
 # run webpack in production
 npm run pack
+
+# 注册淘宝镜像源
+npm install --registry=https://registry.npm.taobao.org
+
+npm config set proxy http://127.0.0.1:11000
+
+npm config set https-proxy http://127.0.0.1:11000
+
+npm config delete proxy
+
+npm config set registry http://registry.npmjs.org
 ```
 ---
 
